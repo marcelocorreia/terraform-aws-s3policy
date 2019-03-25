@@ -1,4 +1,4 @@
-# terraform/aws/s3policy
+# terraform-aws-s3policy
 
 ## Inputs
 

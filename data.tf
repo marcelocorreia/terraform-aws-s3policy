@@ -10,7 +10,7 @@ data "aws_iam_policy_document" "write_policy_document" {
     ]
 
     principals {
-      identifiers = "${var.write_users}"
+      identifiers = ["${var.write_users}"]
       type        = "AWS"
     }
   }
@@ -27,7 +27,7 @@ data "aws_iam_policy_document" "read_policy_document" {
     ]
 
     principals {
-      identifiers = "${var.read_users}"
+      identifiers = ["${var.read_users}"]
       type        = "AWS"
     }
   }

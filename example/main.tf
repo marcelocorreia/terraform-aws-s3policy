@@ -8,8 +8,10 @@ provider "aws" {
 }
 
 module "s3_policy" {
-  source = "../"
-  bucket = "hey"
+  source      = "../"
+  bucket      = "hey"
+  read_users  = ["arn:aws:iam::12345678901:user/dalek", "arn:aws:iam::12345678901:user/gepetto"]
+  write_users = ["${data.aws_caller_identity.me.arn}"]
 }
 
 data "aws_caller_identity" "me" {}

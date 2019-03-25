@@ -4,7 +4,7 @@
 
 | Name | Description | Type | Default | Required |
 |------|-------------|:----:|:-----:|:-----:|
-| bucket | Buckets to be created | string | - | yes |
+| bucket | Bucket to be created | string | - | yes |
 | read_users | List of Users ARN | list | `<list>` | no |
 | write_users | List of Users ARN | list | `<list>` | no |
 

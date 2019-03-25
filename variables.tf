@@ -1,5 +1,5 @@
 variable "bucket" {
-  description = "Buckets to be created"
+  description = "Bucket to be created"
 }
 
 variable "read_users" {
